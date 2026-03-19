@@ -33,5 +33,5 @@ jobs:
         server-dir: ./shweyokelayexpress_dashboard/ 
         port: 21
         protocol: ftp
-        local-dir: ./dist/ 
+        local-dir: ./build/ 
         
