@@ -21,7 +21,10 @@ jobs:
       run: npm install
 
     - name: Build Project
-      run: CI=false npm run build
+      run: |
+           CI=false npm run build
+           ls -la          # လက်ရှိ folder ထဲမှာ ဘာတွေရှိလဲ ကြည့်မယ်
+           ls -la build/ || ls -la dist/  # build သို့မဟုတ် dist ရှိလား စစ်မယ် 
 
     - name: Sync Build Folder to ifastnet
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
