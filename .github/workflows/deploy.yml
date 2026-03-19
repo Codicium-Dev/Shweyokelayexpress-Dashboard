@@ -30,5 +30,8 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         # Build ထွက်လာတဲ့ folder (ဥပမာ- dist သို့မဟုတ် build) ကိုပဲ တင်ပေးရန်
+        server-dir: ./shweyokelayexpress_dashboard/ 
+        port: 21
+        protocol: ftp
         local-dir: ./dist/ 
-        server-dir: ./htdocs/shweyokelay_dashboard/
+        
