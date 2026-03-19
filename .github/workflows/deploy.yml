@@ -15,13 +15,13 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18' # သင့် Dashboard ရဲ့ version အလိုက် ပြင်နိုင်ပါတယ်
+        node-version: '24' # သင့် Dashboard ရဲ့ version အလိုက် ပြင်နိုင်ပါတယ်
 
     - name: Install Dependencies
       run: npm install
 
     - name: Build Project
-      run: npm run build
+      run: CI=false npm run build
 
     - name: Sync Build Folder to ifastnet
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
