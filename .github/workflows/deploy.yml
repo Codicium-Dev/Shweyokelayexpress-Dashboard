@@ -23,6 +23,7 @@ jobs:
     - name: Build Project
       env:
         REACT_APP_API_URL: https://uat-api.shweyokelayexpress.com/api
+        REACT_APP_IMAGE_URL: https://uat-api.shweyokelayexpress.com
       run: |
            CI=false npm run build
            ls -la          # လက်ရှိ folder ထဲမှာ ဘာတွေရှိလဲ ကြည့်မယ်
