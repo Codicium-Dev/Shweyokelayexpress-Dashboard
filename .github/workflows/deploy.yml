@@ -21,6 +21,8 @@ jobs:
       run: npm install
 
     - name: Build Project
+      env:
+        REACT_APP_API_URL: https://uat-api.shweyokelayexpress.com/api
       run: |
            CI=false npm run build
            ls -la          # လက်ရှိ folder ထဲမှာ ဘာတွေရှိလဲ ကြည့်မယ်
