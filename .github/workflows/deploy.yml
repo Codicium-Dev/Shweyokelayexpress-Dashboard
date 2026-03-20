@@ -37,7 +37,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         # Build ထွက်လာတဲ့ folder (ဥပမာ- dist သို့မဟုတ် build) ကိုပဲ တင်ပေးရန်
         local-dir: ./build/ 
-        server-dir: ./uat-admin.shweyokelayexpress.com/
+        server-dir: uat-admin.shweyokelayexpress.com/
         server-dir-clean: true
         port: 21
         protocol: ftp
