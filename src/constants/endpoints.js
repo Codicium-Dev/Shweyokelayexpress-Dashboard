@@ -2,11 +2,13 @@
 // - REACT_APP_API_BASE_URL (e.g. http://localhost:8000/api)
 // - REACT_APP_IMAGE_URL (e.g. http://localhost:8000)
 // - REACT_APP_LARAVEL_SECRET_KEY (Laravel APP_KEY base64 decoded string)
-export const baseURL =
-  process.env.REACT_APP_API_BASE_URL ??
-  "https://uat-api.shweyokelayexpress.com/api";
-export const imageURL =
-  process.env.REACT_APP_IMAGE_URL ?? "https://uat-api.shweyokelayexpress.com";
+// export const baseURL =
+//   process.env.REACT_APP_API_BASE_URL ??
+//   "https://uat-api.shweyokelayexpress.com/api";
+export const baseURL = "https://uat-api.shweyokelayexpress.com/api";
+// export const imageURL =
+//   process.env.REACT_APP_IMAGE_URL ?? "https://uat-api.shweyokelayexpress.com";
+export const imageURL = "https://uat-api.shweyokelayexpress.com";
 
 // prod || uat default (must match backend APP_KEY without "base64:" prefix)
 export const secretKey =
